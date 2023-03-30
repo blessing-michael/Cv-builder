@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+}
+/* 
+#app{
+    
+    width: 1000px;
+    background-color: antiquewhite;
+} */
+/* nav styling */
+#nav{
+    background-color: rgb(6, 114, 157);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    color: white;
+
+}
+#app{
+    margin-top: 30px;
+}
+#title{
+    text-transform: capitalize;
+}
+#icon{
+    margin-right: 10px;
+}
+#contact{
+    margin-right: 50px;
+    display: flex;
+    
+
+}
+li a{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+li{
+    list-style-type: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Resume styling */
+
+.resume{
+    width: 600px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 13%;
+    right: 10%;
+}
+.resultpage{
+    color: blue;
+}

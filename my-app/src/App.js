@@ -1,8 +1,17 @@
 import React from 'react'
+import Nav from './Component/Nav'
+// import Resume from './Component/Resume'
+
+
+
+
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+        <Nav/>
+       {/* <Resume/> */}
+    </div>
   )
 }
 
