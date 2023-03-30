@@ -1,4 +1,5 @@
 import { useState } from "react";
+import uniqid from "uniqid";
 
 import React from "react";
 
@@ -9,6 +10,7 @@ function Info() {
     title: "doctor",
     email: "",
     phone: "",
+    
   });
 
   const [people, setPeople] = useState([]);
@@ -22,19 +24,20 @@ function Info() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newPerson = { ...person, id: new Date().getTime().toString() };
+    const newPerson = { ...person, id: uniqid() };
     setPeople([...people, newPerson]);
   };
 
   return (
     <div>
       <h2>Personal Information</h2>
-      <div className="linethrough"></div>
+     
       <form>
         <input
           type="text"
           id="firstName"
           name="firstName"
+          required
           placeholder="first name"
           value={person.firstName}
           onChange={handleChange}
@@ -72,7 +75,7 @@ function Info() {
           onChange={handleChange}
         />
 
-        <button type="submit" onClick={handleSubmit}>
+        <button type="submit" id="infobtn" onClick={handleSubmit}>
           Add
         </button>
       </form>
