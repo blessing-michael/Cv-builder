@@ -1,12 +1,9 @@
 *{
     margin: 0;
 }
-/* 
-#app{
-    
-    width: 1000px;
-    background-color: antiquewhite;
-} */
+body{
+    background-color: rgb(223, 235, 239);
+}
 /* nav styling */
 #nav{
     background-color: rgb(6, 114, 157);
@@ -49,12 +46,87 @@ nav{
 /* Resume styling */
 
 .resume{
-    width: 600px;
-    background-color: antiquewhite;
+    width: 300px;
+    background-color: white;
     position: absolute;
     top: 13%;
     right: 10%;
+    padding: 40px;
+    border-radius: 5px;
+    /* margin: auto; */
 }
 .resultpage{
     color: blue;
+}
+form{
+    margin-top: 20px;
+    /* background-color: bisque; */
+    /* width: 100%; */
+    /* position: absolute; */
+    /* position: relative; */
+    /* padding: 20px; */
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+#title{
+    width: 83%;
+
+    
+}
+input{
+    margin: 7px;
+    height: 35px;
+    width: 40%;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+.linethrough{
+    height: 1px;
+    background-color: rgb(183, 180, 180);
+    width: 97%;
+    margin-top: 15px;
+}
+button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+input::placeholder{
+    text-transform: capitalize;
+}
+
+.display{
+    
+        width: 600px;
+        background-color: white;
+        position: absolute;
+        top: 1%;
+        left: -200%;
+        padding: 40px;
+        border-radius: 5px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        /* text-align: center; */
+        /* margin: auto; */
+    
+}
+.displayPinfo{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.firstname{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+h4{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+p{
+    margin-top: 10px;
+    color: rgb(56, 55, 55);
 }

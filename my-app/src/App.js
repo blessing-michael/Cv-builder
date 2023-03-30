@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from './Component/Nav'
+import Resume from './Component/Resume'
 // import Resume from './Component/Resume'
 
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
         <Nav/>
+        <Resume/>
        {/* <Resume/> */}
     </div>
   )
