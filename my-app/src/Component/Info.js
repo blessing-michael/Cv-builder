@@ -2,6 +2,8 @@ import { useState } from "react";
 import uniqid from "uniqid";
 
 import React from "react";
+import InfoDisplay from "./InfoDisplay";
+// import EduDisplay from "./EduDisplay";
 
 function Info() {
   const [person, setPerson] = useState({
@@ -10,7 +12,6 @@ function Info() {
     title: "doctor",
     email: "",
     phone: "",
-    
   });
 
   const [people, setPeople] = useState([]);
@@ -31,7 +32,7 @@ function Info() {
   return (
     <div>
       <h2>Personal Information</h2>
-     
+
       <form>
         <input
           type="text"
@@ -46,6 +47,7 @@ function Info() {
           type="text"
           id="lastName"
           name="lastName"
+          required
           placeholder="last name"
           value={person.lastName}
           onChange={handleChange}
@@ -54,6 +56,7 @@ function Info() {
           type="text"
           id="title"
           name="title"
+          required
           placeholder="title"
           value={person.title}
           onChange={handleChange}
@@ -62,6 +65,7 @@ function Info() {
           type="text"
           id="email"
           name="email"
+          required
           placeholder="email"
           value={person.email}
           onChange={handleChange}
@@ -70,6 +74,7 @@ function Info() {
           type="text"
           id="phone"
           name="phone"
+          required
           placeholder="phone"
           value={person.phone}
           onChange={handleChange}
@@ -81,37 +86,9 @@ function Info() {
       </form>
       <div className="linethrough"></div>
 
-      {people.map((person) => {
-        const { id, firstName, lastName, title, email, phone } = person;
-        return (
-          <div key={id} className="display">
-            <h2>Personal Information</h2>
-            <div className="linethrough"></div>
-            <div className="displayPinfo">
-              <div className="firstname">
-                <h4>first Name:</h4>
-                <p>{firstName}</p>
-              </div>
-              <div className="firstname">
-                <h4>last Name:</h4>
-                <p>{lastName}</p>
-              </div>
-              <div className="firstname">
-                <h4>professional title:</h4>
-                <p>{title}</p>
-              </div>
-              <div className="firstname">
-                <h4>email:</h4>
-                <p>{email}</p>
-              </div>
-              <div className="firstname">
-                <h4>phone:</h4>
-                <p>{phone}</p>
-              </div>
-            </div>
-          </div>
-        );
-      })}
+      <InfoDisplay people={people} />
+
+      {/* <EduDisplay/> */}
     </div>
   );
 }
