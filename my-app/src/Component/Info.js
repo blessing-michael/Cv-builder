@@ -7,9 +7,9 @@ import InfoDisplay from "./InfoDisplay";
 
 function Info() {
   const [person, setPerson] = useState({
-    firstName: "John",
-    lastName: "mike",
-    title: "doctor",
+    firstName: "",
+    lastName: "",
+    title: "",
     email: "",
     phone: "",
   });

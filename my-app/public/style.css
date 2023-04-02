@@ -50,26 +50,19 @@ nav {
   padding: 40px;
   border-radius: 5px;
   z-index: -1;
-  /* margin: auto; */
 }
 .resultpage {
   color: blue;
 }
 form {
   margin-top: 20px;
-  /* background-color: bisque; */
-  /* width: 100%; */
-  /* position: absolute; */
-  /* position: relative; */
   /* padding: 20px; */
-
-  /* display: grid;
-    grid-template-columns: 1fr 1fr; */
 }
 #title,
 #job {
   width: 83%;
 }
+
 input {
   margin: 7px;
   height: 35px;
@@ -120,18 +113,10 @@ input::placeholder {
   left: -200%;
   padding: 40px;
   border-radius: 5px;
-  /* background-color: blue; */
+
   height: 260px;
-  /* min-height: 800px; */
-  /* z-index: 1; */
-  /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
-  /* text-align: center; */
-  /* margin: auto; */
 }
 .displayPinfo {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -155,10 +140,6 @@ p {
   margin-left: 7%;
   /* justify-content: space-around; */
   /* display: flex; */
-
-  /* position: absolute;
-    bottom: 20%;
-    right: 15%; */
 }
 #eduAddbtn {
   background: transparent;
@@ -211,7 +192,7 @@ span.addbtn {
   padding: 40px;
   border-radius: 5px;
   z-index: 1;
-  /* background-color: aqua; */
+
   height: 260px;
 }
 .linethroughEdu {
@@ -222,17 +203,10 @@ span.addbtn {
   margin-bottom: 15px;
 }
 .displayPinfoEdu {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* background-color: blue; */
-  /* margin-top: 300px; */
-  /* z-index: 1; */
-  /* z-index: -99; */
-  /* position: absolute; */
 }
 .main-StaticEdu {
-  /* background-color: blueviolet; */
   height: 350px;
 }
 .displayStatic {
@@ -243,9 +217,7 @@ span.addbtn {
   left: -200%;
   padding: 40px;
   border-radius: 5px;
-  /* min-height: 800px;  */
   z-index: -1;
-  /* height: 100vh; */
 }
 
 #staticp {
@@ -253,20 +225,14 @@ span.addbtn {
 }
 .main-StaticEdu {
   margin-top: 50px;
-  /* background-color: aqua; */
-  /* height: 350px; */
 }
 
 .footer {
-  /* background-color: blueviolet; */
   position: absolute;
   bottom: -100%;
   width: 100%;
-  /* text-align: c; */
 }
-.App {
-  /* position: relative; */
-}
+
 /* experience section */
 .Exdel-container {
   position: absolute;
@@ -284,7 +250,6 @@ span.addbtn {
   z-index: 1;
 }
 .firstname {
-  /* background-color: aquamarine; */
   margin: 10px;
   max-width: 300px;
 }
@@ -297,7 +262,36 @@ span.addbtn {
 } */
 .main-StaticExp {
   height: 300px;
-  /* position: fixed; */
-  /* position: absolute; */
-  /* bottom: 0; */
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 900px) {
+  .resume {
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    padding: 40px;
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  .displayStatic {
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    padding: 40px;
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: -230%;
+    width: 100%;
+  }
 }
