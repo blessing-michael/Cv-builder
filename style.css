@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: rgb(223, 235, 239);
+}
+/* nav styling */
+#nav {
+  background-color: rgb(6, 114, 157);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+}
+#app {
+  margin-top: 30px;
+}
+#title {
+  text-transform: capitalize;
+}
+#icon {
+  margin-right: 10px;
+}
+#contact {
+  margin-right: 50px;
+  display: flex;
+}
+li a {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Resume styling */
+
+.resume {
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  padding: 40px;
+  border-radius: 5px;
+  z-index: -1;
+}
+.resultpage {
+  color: blue;
+}
+form {
+  margin-top: 20px;
+  /* padding: 20px; */
+}
+#title,
+#job {
+  width: 83%;
+}
+
+input {
+  margin: 7px;
+  height: 35px;
+  width: 40%;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+}
+#start,
+#end {
+  margin: 7px;
+  height: 40px;
+  width: 41%;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+}
+.linethrough {
+  height: 1px;
+  background-color: rgb(183, 180, 180);
+  width: 98%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+#infobtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgb(6, 114, 157);
+  border-radius: 2px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 7px;
+}
+#infobtn:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+  transition: all 0.3s ease-out;
+}
+input::placeholder {
+  text-transform: capitalize;
+}
+
+.display {
+  width: 600px;
+  background-color: white;
+  position: absolute;
+  top: 1%;
+  left: -200%;
+  padding: 40px;
+  border-radius: 5px;
+
+  height: 260px;
+}
+.displayPinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.firstname {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+h4 {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+p {
+  margin-top: 10px;
+  color: rgb(56, 55, 55);
+}
+
+/* ....education section ..btn styling... */
+.edubtn-Container {
+  margin-top: 10px;
+  margin-left: 7%;
+  /* justify-content: space-around; */
+  /* display: flex; */
+}
+#eduAddbtn {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(6, 114, 157);
+  color: rgb(8, 83, 113);
+  text-transform: uppercase;
+  padding: 3px 15px;
+}
+#eduDelbtn {
+  background-color: rgb(230, 181, 56);
+  border: none;
+  color: rgb(8, 83, 113);
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 4px 15px;
+}
+
+span.delbtn {
+  color: rgb(168, 44, 44);
+  margin-right: 4px;
+}
+span.addbtn {
+  margin-right: 4px;
+}
+
+#eduDelbtn:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+  transition: all 0.3s ease-out;
+}
+#eduAddbtn:hover {
+  cursor: pointer;
+  background-color: rgb(8, 83, 113);
+  color: white;
+  transition: all 0.3s ease-out;
+}
+.del-container {
+  position: absolute;
+  bottom: 40%;
+  right: 17%;
+}
+
+.displayEducation {
+  width: 600px;
+  background-color: white;
+  position: absolute;
+  top: 40%;
+  left: -200%;
+  padding: 40px;
+  border-radius: 5px;
+  z-index: 1;
+
+  height: 260px;
+}
+.linethroughEdu {
+  height: 1px;
+  background-color: rgb(183, 180, 180);
+  width: 98%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.displayPinfoEdu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-StaticEdu {
+  height: 350px;
+}
+.displayStatic {
+  width: 600px;
+  background-color: white;
+  position: absolute;
+  top: 1%;
+  left: -200%;
+  padding: 40px;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+#staticp {
+  color: rgb(247, 113, 113);
+}
+.main-StaticEdu {
+  margin-top: 50px;
+}
+
+.footer {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+}
+
+/* experience section */
+.Exdel-container {
+  position: absolute;
+  bottom: 5%;
+  right: 17%;
+}
+.displayExperience {
+  width: 600px;
+  background-color: white;
+  position: absolute;
+  top: 75%;
+  left: -200%;
+  padding: 40px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.firstname {
+  margin: 10px;
+  max-width: 300px;
+}
+/* .displayPinfoExp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 0;
+
+} */
+.main-StaticExp {
+  height: 300px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 900px) {
+  .resume {
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    padding: 40px;
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  .displayStatic {
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    padding: 40px;
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: -230%;
+    width: 100%;
+  }
+}
