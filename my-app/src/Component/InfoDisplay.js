@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 
 function InfoDisplay(props) {
-    const [err, setErr]=useState(false)
-
-
   const { people } = props;
   return (
     <div>
       {people.map((person) => {
         const { id, firstName, lastName, title, email, phone } = person;
         return (
-        <div key={id} className="display" id="formele">
+          <div key={id} className="display" id="formele">
             <h2>Personal Information</h2>
             <div className="linethrough"></div>
             <div className="displayPinfo">
